@@ -15,7 +15,7 @@ class Calculadora:
         print("[4] Divisao")
         print("[5] Exponenciacao")
         print("[6] Radiciacao")
-        print("[7] Moludo")
+        print("[7] Modulo")
         print("[0] SAIR")
 
     @staticmethod

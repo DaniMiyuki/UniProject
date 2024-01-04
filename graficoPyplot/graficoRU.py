@@ -21,9 +21,7 @@ class FuncaoLinear:
             n = int(input("Digite 10 numeros de [0 a 99]: "))
             lista.append(n)
         return lista
-def legenda(cores, x, y):
-    for i in cores:
-        return i   
+  
 
 # Instancia da classe FuncaoLinear
 funcao = FuncaoLinear(4, 5, 5)

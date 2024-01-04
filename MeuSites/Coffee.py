@@ -1,5 +1,4 @@
 import tkinter as tk
-from functools import partial
 
 # Funcao que cria a janela de exibicao
 def create_window():
@@ -15,10 +14,11 @@ def create_window():
             def wrapper():
                 show_schedule(func())()
             button.config(command=wrapper, relief="raised", padx=10, pady=5)
+            return wrapper
         return decorator
     
     # Funcoes para obter 予定
-    def get_schedule_Monday(monday):
+    def get_schedule_Monday():
         monday = {
             "5:00" : "alongamento",
             "5:30" : "Coffee and News",
@@ -27,7 +27,7 @@ def create_window():
             "21:00": "Classes"    
         }
         return monday
-    def get_schedule_Tuesday(tuesday):
+    def get_schedule_Tuesday():
         tuesday = {
             "5:00" : "alongamento",
             "5:30" : "Coffee and News",
@@ -36,7 +36,7 @@ def create_window():
             "21:00": "Classes"  
         }
         return tuesday
-    def get_schedule_Wednesday(wednesday):
+    def get_schedule_Wednesday():
         wednesday = {
             "5:00" : "alongamento",
             "5:30" : "Coffee and News",
@@ -45,7 +45,7 @@ def create_window():
             "21:00": "Classes"
         }
         return wednesday
-    def get_schedule_Thursday(thursday):
+    def get_schedule_Thursday():
         thursday = {
             "5:00" : "alongamento",
             "5:30" : "Coffee and News",
@@ -54,7 +54,7 @@ def create_window():
             "21:00": "Classes" 
         }
         return thursday
-    def get_schedule_Friday(friday):
+    def get_schedule_Friday():
         friday = {
             "5:00" : "alongamento",
             "5:30" : "Coffee and News",
@@ -63,7 +63,7 @@ def create_window():
             "21:00": "Classes"         
         }
         return friday
-    def get_schedule_Saturday(saturday):
+    def get_schedule_Saturday():
         saturday = {
             "5:00" : "alongamento",
             "5:30" : "Coffee and News",
@@ -78,7 +78,7 @@ def create_window():
             "21:00": "Classes"     
         }
         return saturday
-    def get_schedule_Sunday(sunday):
+    def get_schedule_Sunday():
         sunday = {
             "5:00" : "alongamento",
             "5:30" : "Coffee and News",
